@@ -90,6 +90,10 @@
                         <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
                                 href="#"><img src="assets/img/logo.png" alt="Deskripsi Gambar"
                                     class="w-20 h-20"></img></a></li>
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="#">Shop</a></li>
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="#">About</a></li>
                     </ul>
                 </nav>
             </div>
@@ -333,11 +337,10 @@ Alternatively if you want to just have a single hero
                 </div>
             </nav>
 
-            <nav id="store" class="top-0 z-30 w-full pl-4 pr-4 pb-10 px-6 py-1">
-                <div class="container mx-auto pl-10 pr-10 pb-10">
+            <nav id="store" class="top-0 z-30 w-full px-6 py-1">
+                <div class="container flex flex-wrap items-center justify-between w-full px-2 py-3 mx-auto mt-0">
 
-                    <ul
-                        class="flex flex-wrap items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
+                    <ul class="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
                         <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
                                 href="#"><img src="assets/img/home.png" alt="Deskripsi Gambar"
                                     class="w-10 h-10">Semua</a></li>
@@ -359,186 +362,6 @@ Alternatively if you want to just have a single hero
                     </ul>
                 </div>
             </nav>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/banana.png">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Pisang</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/apel.png">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Apel</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/meet.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Daging Kerbau</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#"class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/ikan.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Ikan</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/udang.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Udang</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/bihun.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Bihun Jagung</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/saos.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Saos</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class=" mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/kecap.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Kecap</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/jeruk.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">jeruk</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/pokat.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Alpukat</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
 
             <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                 <a href="#" class="w-64 h-64">
@@ -594,60 +417,6 @@ Alternatively if you want to just have a single hero
                 </a>
             </div>
 
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/nugget.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Nugget Ayam 500g</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/sosis.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Sosis Ayam</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/ayam.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Ayam Potong</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
         </div>
 
     </section>
@@ -676,50 +445,21 @@ Alternatively if you want to just have a single hero
                 <div class=" p-4">
                     <ul class="list-none">
                         <li class="font-bold">Follow Us</li>
-                        <li>
-                            <a href="https://instagram.com/real_green_flow?igshid=OGQ5ZDc2ODk2ZA=="
-                                class="hover:text-blue-600">
-                                <img src="assets/img/instagram.png" alt="Instagram"
-                                    class="w-5 h-5 inline-block mr-2">
-                                Instagram
-                            </a>
-                        </li>
-
+                        <li><a href="https://instagram.com/real_green_flow?igshid=OGQ5ZDc2ODk2ZA=="
+                                class=" hover:text-blue-600">Instagram</a></li>
                         <li><a href="https://www.facebook.com/profile.php?id=61552064725202"
-                                class=" hover:text-blue-600">
-                                <img src="assets/img/facebook.png" alt="facebook" class="w-5 h-5 inline-block mr-2">
-                                Facebook
-                            </a>
-                        </li>
+                                class=" hover:text-blue-600">Facebook</a></li>
                         <li><a href="https://twitter.com/Real_green_flow?t=F9RxU9jn50wkNGm5yEfbNw&s=09"
-                                class=" hover:text-blue-600">
-                                <img src="assets/img/twitter.png" alt="twitter" class="w-5 h-5 inline-block mr-2">
-                                Twitter</a></li>
-                        <li><a href="https://vm.tiktok.com/ZMj5cUQGB/" class=" hover:text-blue-600">
-                                <img src="assets/img/tiktok.png" alt="tiktok" class="w-5 h-5 inline-block mr-2">
-                                TikTok</a></li>
+                                class=" hover:text-blue-600">Twitter</a></li>
+                        <li><a href="https://vm.tiktok.com/ZMj5cUQGB/" class=" hover:text-blue-600">TikTok</a></li>
                         <li><a href="https://youtube.com/@Green_flow?si=8w9YR8tcRLxpJGGb"
-                                class=" hover:text-blue-600">
-                                <img src="assets/img/th.jpg" alt="youtube" class="w-5 h-5 inline-block mr-2">
-                                Youtube</a></li>
+                                class=" hover:text-blue-600">Youtube</a></li>
                     </ul>
                 </div>
                 <div class=" p-4">
                     <ul class="list-none">
-                        <li class="font-bold">Get The Apps</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-blue-600">
-                                <img src="assets/img/playstore.png" alt="ps"
-                                    class="w-20 h-20 inline-block mr-2">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-blue-600">
-                                <img src="assets/img/appsstore.png" alt="ps"
-                                    class="w-20 h-6 inline-block mr-2">
-                            </a>
-                        </li>
+                        <li class="font-bold">Get The Apps</a></li>
+                        <li><a href="#" class=" hover:text-blue-600">App Store</a></li>
 
                     </ul>
                 </div>
