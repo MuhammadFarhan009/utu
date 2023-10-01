@@ -21,6 +21,9 @@ Route::get('/', function () {
 Route::get('/p', function () {
     return view('dshboard');
 });
+Route::get('/q', function () {
+    return view('aboutus');
+});
 
 
 
@@ -28,7 +31,7 @@ Route::get('/p', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/home',[HomeController::class, 'index'])->middleware('auth')->name('home');
+Route::get('/home', [HomeController::class, 'index'])->middleware('auth')->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
