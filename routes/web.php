@@ -16,7 +16,7 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
-    return view('dshboard');
+    return view('user.dashboard');
 });
 
 // Route::get('/dashboard', function () {
