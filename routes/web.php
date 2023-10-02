@@ -26,14 +26,20 @@ Route::resource("/data_barang", DataBarangController::class);
 Route::post('/data_barang', [DataBarangController::class, 'store'])->name('data_barang.store');
 
 Route::get('/', function () {
-    return view('dshboard');
+    return view('user.dashboard');
 });
+
+Route::get('/q', function () {
+    return view('user.welcome');
+});
+
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/home',[HomeController::class, 'index'])->middleware('auth')->name('home');
+Route::get('/home', [HomeController::class, 'index'])->middleware('auth')->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
