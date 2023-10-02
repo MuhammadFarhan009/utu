@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\dataBarang;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -16,7 +17,8 @@ class HomeController extends Controller
             $usertype=Auth()->user()->usertype;
 
             if($usertype == 'user'){
-                return view('dashboard');
+                $dataBarang = dataBarang::all();
+                return view('dashboard')->with('databarang', $dataBarang);
             }
 
             else if($usertype == 'admin'){

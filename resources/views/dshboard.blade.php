@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +11,9 @@
         content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
-    @vite('resources/css/app.css')
+
     <style>
         .work-sans {
             font-family: 'Work Sans', sans-serif;
@@ -69,14 +70,14 @@
 
 </head>
 
-<body class="text-base leading-normal tracking-normal text-gray-600 bg-white work-sans">
+<body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
 
     <!--Nav-->
-    <nav id="header" class="top-0 z-30 w-full py-1">
-        <div class="container flex flex-wrap items-center justify-between w-full px-6 py-3 mx-auto mt-0">
+    <nav id="header" class="w-full z-30 top-0 py-1">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
 
-            <label for="menu-toggle" class="block cursor-pointer md:hidden">
-                <svg class="text-gray-900 fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     viewBox="0 0 20 20">
                     <title>menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -84,31 +85,35 @@
             </label>
             <input class="hidden" type="checkbox" id="menu-toggle" />
 
-            <div class="order-3 hidden w-full md:flex md:items-center md:w-auto md:order-1" id="menu">
+            <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
                 <nav>
-                    <ul class="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                    <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
                                 href="#"><img src="assets/img/logo.png" alt="Deskripsi Gambar"
                                     class="w-20 h-20"></img></a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="#">Shop</a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="#">About</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="order-1 md:order-2">
-                <a class="flex items-center text-xl font-bold tracking-wide text-gray-800 no-underline hover:no-underline "
+                <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
                     href="#">
 
                 </a>
             </div>
 
-            <div class="flex items-center order-2 md:order-3" id="nav-content">
+            <div class="order-2 md:order-3 flex items-center" id="nav-content">
 
                 <a class="inline-block no-underline hover:text-black" href="#">
                     <div class="relative text-gray-600">
                         <input type="text"
-                            class="h-10 px-5 pr-10 text-sm bg-white border-2 border-gray-300 rounded-lg focus:outline-none"
+                            class="border-2 border-gray-300 bg-white h-10 px-5 pr-10 rounded-lg text-sm focus:outline-none"
                             placeholder="Search Here...">
-                        <button type="submit" class="absolute top-0 right-0 mt-3 mr-4">
+                        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
                             <img src="assets/img/search.png" alt="Deskripsi Gambar" width="20" height="20">
                         </button>
                     </div>
@@ -116,67 +121,16 @@
 
                 </a>
 
-                <div class="relative inline-block text-left">
-                    <div>
-                        <button type="button"
-                            class="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50"
-                            id="menu-button" aria-expanded="false" aria-haspopup="true">
-                            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24">
-                                <circle fill="none" cx="12" cy="7" r="3" />
-                                <path
-                                    d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" />
-                            </svg>
-                        </button>
-                    </div>
+                <a class="inline-block no-underline hover:text-black" href="#">
+                    <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <circle fill="none" cx="12" cy="7" r="3" />
+                        <path
+                            d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" />
+                    </svg>
+                </a>
 
-                    <!--
-                      Dropdown menu, show/hide based on menu state.
-                  
-                      Entering: "transition ease-out duration-100"
-                        From: "transform opacity-0 scale-95"
-                        To: "transform opacity-100 scale-100"
-                      Leaving: "transition ease-in duration-75"
-                        From: "transform opacity-100 scale-100"
-                        To: "transform opacity-0 scale-95"
-                    -->
-                    <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
-                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1"
-                        id="dropdown-menu">
-                        <div class="py-1" role="none">
-                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                            <form method="POST" action="#" role="none">
-                                <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm"
-                                    role="menuitem" tabindex="-1" id="menu-item-3">Login</button>
-                            </form>
-                            <form method="POST" action="#" role="none">
-                                <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm"
-                                    role="menuitem" tabindex="-1" id="menu-item-3">Register</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <script>
-                    const menuButton = document.getElementById('menu-button');
-                    const dropdownMenu = document.getElementById('dropdown-menu');
-
-                    menuButton.addEventListener('click', () => {
-                        const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-                        if (isExpanded) {
-                            menuButton.setAttribute('aria-expanded', 'false');
-                            dropdownMenu.classList.add('hidden');
-                        } else {
-                            menuButton.setAttribute('aria-expanded', 'true');
-                            dropdownMenu.classList.remove('hidden');
-                        }
-                    });
-                </script>
-
-
-
-
-                <a class="inline-block pl-3 no-underline hover:text-black" href="#">
+                <a class="pl-3 inline-block no-underline hover:text-black" href="#">
                     <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24">
                         <path
@@ -190,20 +144,20 @@
         </div>
     </nav>
 
-    <div class="container relative mx-auto carousel" style="max-width:1600px;">
-        <div class="relative w-full overflow-hidden carousel-inner">
+    <div class="carousel relative container mx-auto" style="max-width:1600px;">
+        <div class="carousel-inner relative overflow-hidden w-full">
             <!--Slide 1-->
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
                 hidden="" checked="checked">
-            <div class="absolute opacity-0 carousel-item" style="height:50vh;">
-                <div class="flex block w-full h-full pt-6 mx-auto bg-right bg-cover md:pt-0 md:items-center"
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
                     style="background-image: url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
 
                     <div class="container mx-auto">
                         <div
-                            class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
-                            <p class="my-4 text-2xl text-black">Stripy Zig Zag Jigsaw Pillow and Duvet Set</p>
-                            <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
+                            class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Stripy Zig Zag Jigsaw Pillow and Duvet Set</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
                                 href="#">view product</a>
                         </div>
                     </div>
@@ -211,22 +165,22 @@
                 </div>
             </div>
             <label for="carousel-3"
-                class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-1 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
+                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
             <label for="carousel-2"
-                class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-1 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
+                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
             <!--Slide 2-->
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
                 hidden="">
-            <div class="absolute bg-right bg-cover opacity-0 carousel-item" style="height:50vh;">
-                <div class="flex block w-full h-full pt-6 mx-auto bg-right bg-cover md:pt-0 md:items-center"
+            <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
                     style="background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM0MTM2fQ&auto=format&fit=crop&w=1600&q=80');">
 
                     <div class="container mx-auto">
                         <div
-                            class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
-                            <p class="my-4 text-2xl text-black">Real Bamboo Wall Clock</p>
-                            <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
+                            class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Real Bamboo Wall Clock</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
                                 href="#">view product</a>
                         </div>
                     </div>
@@ -234,22 +188,22 @@
                 </div>
             </div>
             <label for="carousel-1"
-                class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-2 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
+                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
             <label for="carousel-3"
-                class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-2 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
+                class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
             <!--Slide 3-->
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
                 hidden="">
-            <div class="absolute opacity-0 carousel-item" style="height:50vh;">
-                <div class="flex block w-full h-full pt-6 mx-auto bg-bottom bg-cover md:pt-0 md:items-center"
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom"
                     style="background-image: url('https://images.unsplash.com/photo-1519327232521-1ea2c736d34d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
 
                     <div class="container mx-auto">
                         <div
-                            class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
-                            <p class="my-4 text-2xl text-black">Brown and blue hardbound book</p>
-                            <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
+                            class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Brown and blue hardbound book</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
                                 href="#">view product</a>
                         </div>
                     </div>
@@ -257,23 +211,23 @@
                 </div>
             </div>
             <label for="carousel-2"
-                class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-3 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
+                class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
             <label for="carousel-1"
-                class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-3 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
+                class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
             <!-- Add additional indicators for each slide-->
             <ol class="carousel-indicators">
                 <li class="inline-block mr-3">
                     <label for="carousel-1"
-                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
                 </li>
                 <li class="inline-block mr-3">
                     <label for="carousel-2"
-                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
                 </li>
                 <li class="inline-block mr-3">
                     <label for="carousel-3"
-                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
                 </li>
             </ol>
 
@@ -284,13 +238,13 @@
 
 Alternatively if you want to just have a single hero
 
-<section class="flex w-full pt-12 mx-auto bg-right bg-cover bg-nordic-gray-light md:pt-0 md:items-center" style="max-width:1600px; height: 32rem; background-image: url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
+<section class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right" style="max-width:1600px; height: 32rem; background-image: url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
 
  <div class="container mx-auto">
 
-  <div class="flex flex-col items-start justify-center w-full px-6 tracking-wide lg:w-1/2">
-   <h1 class="my-4 text-2xl text-black">Stripy Zig Zag Jigsaw Pillow and Duvet Set</h1>
-   <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black" href="#">products</a>
+  <div class="flex flex-col w-full lg:w-1/2 justify-center items-start  px-6 tracking-wide">
+   <h1 class="text-black text-2xl my-4">Stripy Zig Zag Jigsaw Pillow and Duvet Set</h1>
+   <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">products</a>
 
   </div>
 
@@ -300,28 +254,28 @@ Alternatively if you want to just have a single hero
 
 -->
 
-    <section class="py-8 bg-white">
+    <section class="bg-white py-8">
 
-        <div class="container flex flex-wrap items-center pt-4 pb-12 mx-auto">
+        <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
 
-            <nav id="store" class="top-0 z-30 w-full px-6 py-1">
-                <div class="container flex flex-wrap items-center justify-between w-full px-2 py-3 mx-auto mt-0">
+            <nav id="store" class="w-full z-30 top-0 px-6 py-1">
+                <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
 
-                    <a class="text-xl font-bold tracking-wide text-gray-800 no-underline uppercase hover:no-underline "
+                    <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
                         href="#">
                         Store
                     </a>
 
                     <div class="flex items-center" id="store-nav-content">
 
-                        <a class="inline-block pl-3 no-underline hover:text-black" href="#">
+                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
                             </svg>
                         </a>
 
-                        <a class="inline-block pl-3 no-underline hover:text-black" href="#">
+                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" viewBox="0 0 24 24">
                                 <path
@@ -333,318 +287,113 @@ Alternatively if you want to just have a single hero
                 </div>
             </nav>
 
-            <nav id="store" class="top-0 z-30 w-full pl-4 pr-4 pb-10 px-6 py-1">
-                <div class="container mx-auto pl-10 pr-10 pb-10">
+            <nav id="store" class="w-full z-30 top-0 px-6 py-1">
+                <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
 
-                    <ul
-                        class="flex flex-wrap items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                    <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
                                 href="#"><img src="assets/img/home.png" alt="Deskripsi Gambar"
-                                    class="w-10 h-10">Semua</a></li>
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                    class="w-10 h-10">Home</a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
                                 href="#"><img src="assets/img/iconapple.png" alt="Deskripsi Gambar"
-                                    class="w-10 h-10">Buah</a></li>
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                href="#"><img src="assets/img/daging.jpg" alt="Deskripsi Gambar"
-                                    class="w-10 h-10">Daging</a></li>
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                href="#"><img src="assets/img/grosir (2).png" alt="Deskripsi Gambar"
-                                    class="w-10 h-10">Grosir</a></li>
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                href="#"><img src="assets/img/sayur.jpg" alt="Deskripsi Gambar"
-                                    class="w-10 h-10">Sayur</a></li>
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                href="#"><img src="assets/img/frozen.jpg" alt="Deskripsi Gambar"
-                                    class="w-10 h-10">Frozen</a></li>
+                                    class="w-10 h-10">Fruit</a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="#"><img src="assets/img/snack.png" alt="Deskripsi Gambar"
+                                    class="w-10 h-10">Snack </a></li>
                     </ul>
                 </div>
             </nav>
 
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/banana.png">
-                    <div class="flex items-center justify-between pt-3">
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg" src="assets/img/sabun.png">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Shampoo</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">Rp10.000</p>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg" src="assets/img/banana.png">
+                    <div class="pt-3 flex items-center justify-between">
                         <p class="">Pisang</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
                         </svg>
                     </div>
                     <p class="pt-1 text-gray-900">Rp10.000</p>
                 </a>
             </div>
 
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/apel.png">
-                    <div class="flex items-center justify-between pt-3">
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg" src="assets/img/apel.png">
+                    <div class="pt-3 flex items-center justify-between">
                         <p class="">Apel</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
                         </svg>
                     </div>
                     <p class="pt-1 text-gray-900">Rp10.000</p>
                 </a>
             </div>
 
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/meet.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Daging Kerbau</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
                         </svg>
                     </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
+                    <p class="pt-1 text-gray-900">£9.99</p>
                 </a>
             </div>
 
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#"class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/ikan.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Ikan</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
                         </svg>
                     </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
+                    <p class="pt-1 text-gray-900">£9.99</p>
                 </a>
             </div>
 
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/udang.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Udang</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
                         </svg>
                     </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/bihun.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Bihun Jagung</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/saos.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Saos</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class=" mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/kecap.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Kecap</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/jeruk.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">jeruk</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/pokat.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Alpukat</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/kangkung.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Kangkung</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/sawi.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Sawi</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/jahe.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">jahe</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/nugget.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Nugget Ayam 500g</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/sosis.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Sosis Ayam</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
-                </a>
-            </div>
-
-            <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
-                <a href="#" class="w-64 h-64">
-                    <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/ayam.jpeg">
-                    <div class="flex items-center justify-between pt-3">
-                        <p class="">Ayam Potong</p>
-                        <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z">
-                            </path>
-                            <circle cx="10.5" cy="18.5" r="1.5"></circle>
-                            <circle cx="17.5" cy="18.5" r="1.5"></circle>
-                        </svg>
-                    </div>
-                    <p class="pt-1 text-gray-900">Rp10.000</p>
+                    <p class="pt-1 text-gray-900">£9.99</p>
                 </a>
             </div>
 
@@ -652,82 +401,87 @@ Alternatively if you want to just have a single hero
 
     </section>
 
-    <footer class="container py-8 mx-auto bg-white border-t border-gray-400">
-        <div class="container flex justify-center ">
-            <div class="grid grid-cols-4 gap-10">
-                <div class=" p-4">
-                    <ul class="list-none">
-                        <li class="font-bold">Green Flow</li>
-                        <li><a href="/aboutus.blade.php" class=" hover:text-blue-600">About Us</a></li>
-                        <li><a href="#" class=" hover:text-blue-600">Blog</a></li>
-                        <li><a href="#" class=" hover:text-blue-600">Careers</a></li>
-                        <li><a href="#" class=" hover:text-blue-600">Suppliers</a></li>
-                    </ul>
-                </div>
+    <section class="bg-white py-8">
 
-                <div class=" p-4">
-                    <ul class="list-none">
-                        <li class="font-bold">Help</li>
-                        <li><a href="#" class=" hover:text-blue-600">Contact Us</a></li>
-                        <li><a href="#" class=" hover:text-blue-600">Delivery Information</a></li>
-                        <li><a href="#" class=" hover:text-blue-600">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class=" p-4">
-                    <ul class="list-none">
-                        <li class="font-bold">Follow Us</li>
-                        <li>
-                            <a href="https://instagram.com/real_green_flow?igshid=OGQ5ZDc2ODk2ZA=="
-                                class="hover:text-blue-600">
-                                <img src="assets/img/instagram.png" alt="Instagram"
-                                    class="w-5 h-5 inline-block mr-2">
-                                Instagram
-                            </a>
-                        </li>
+        <div class="container py-8 px-6 mx-auto">
 
-                        <li><a href="https://www.facebook.com/profile.php?id=61552064725202"
-                                class=" hover:text-blue-600">
-                                <img src="assets/img/facebook.png" alt="facebook" class="w-5 h-5 inline-block mr-2">
-                                Facebook
-                            </a>
-                        </li>
-                        <li><a href="https://twitter.com/Real_green_flow?t=F9RxU9jn50wkNGm5yEfbNw&s=09"
-                                class=" hover:text-blue-600">
-                                <img src="assets/img/twitter.png" alt="twitter" class="w-5 h-5 inline-block mr-2">
-                                Twitter</a></li>
-                        <li><a href="https://vm.tiktok.com/ZMj5cUQGB/" class=" hover:text-blue-600">
-                                <img src="assets/img/tiktok.png" alt="tiktok" class="w-5 h-5 inline-block mr-2">
-                                TikTok</a></li>
-                        <li><a href="https://youtube.com/@Green_flow?si=8w9YR8tcRLxpJGGb"
-                                class=" hover:text-blue-600">
-                                <img src="assets/img/th.jpg" alt="youtube" class="w-5 h-5 inline-block mr-2">
-                                Youtube</a></li>
-                    </ul>
-                </div>
-                <div class=" p-4">
-                    <ul class="list-none">
-                        <li class="font-bold">Get The Apps</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-blue-600">
-                                <img src="assets/img/playstore.png" alt="ps"
-                                    class="w-20 h-20 inline-block mr-2">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-blue-600">
-                                <img src="assets/img/appsstore.png" alt="ps"
-                                    class="w-20 h-6 inline-block mr-2">
-                            </a>
-                        </li>
+            <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8"
+                href="#">
+                About
+            </a>
 
-                    </ul>
+            <p class="mt-8 mb-8">This template is inspired by the stunning nordic minimalist design - in particular:
+                <br>
+                <a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/"
+                    target="_blank">Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900"
+                    href="https://nordicmade.com/">https://nordicmade.com/</a> and <a
+                    class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/"
+                    target="_blank">https://www.metricdesign.no/</a>
+            </p>
+
+            <p class="mb-8">Lorem ipsum dolor sit amet, consectetur <a href="#">random link</a> adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra
+                maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis
+                eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in.
+                Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero
+                enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida
+                rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit
+                egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae
+                congue eu consequat ac.</p>
+
+        </div>
+
+    </section>
+
+    <footer class="container mx-auto bg-white py-8 border-t border-gray-400">
+        <div class="container flex px-3 py-8 ">
+            <div class="w-full mx-auto flex flex-wrap">
+                <div class="flex w-full lg:w-1/2 ">
+                    <div class="px-3 md:px-0">
+                        <h3 class="font-bold text-gray-900">About</h3>
+                        <p class="py-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus
+                            commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right mt-6 md:mt-0">
+                    <div class="px-3 md:px-0">
+                        <h3 class="text-left font-bold text-gray-900">Social</h3>
+
+                        <div class="w-full flex items-center py-4 mt-0">
+                            <a href="#" class="mx-2">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="mx-2">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="mx-2">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="mx-2">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </div>
-        </div>
-        </div>
         </div>
     </footer>
 
