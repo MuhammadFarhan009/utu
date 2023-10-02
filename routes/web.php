@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DataBarangController;
+use App\Http\Controllers\UploadgambarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,14 @@ use App\Http\Controllers\ProfileController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/Data-gambar', [UploadgambarController::class, 'index'])->name('Data-gambar');
+Route::get('/Create-gambar', [UploadgambarController::class, 'create'])->name('Create-gambar');
+Route::post('/Simpan-gambar', [UploadgambarController::class, 'store'])->name('Simpan-gambar');
+
+
+// Route::('/data_barang', [DataBarangController::class, 'index'])->name('databarang.index');
+Route::resource("/data_barang", DataBarangController::class);
+Route::post('/data_barang', [DataBarangController::class, 'store'])->name('data_barang.store');
 
 Route::get('/', function () {
     return view('dshboard');
@@ -30,5 +40,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
 
 require __DIR__ . '/auth.php';
