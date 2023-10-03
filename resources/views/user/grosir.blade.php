@@ -151,32 +151,33 @@
                 <nav id="store" class="top-0 z-30 w-full px-6 py-1">
                     <div class="container flex flex-wrap items-center justify-between w-full px-2 py-3 mx-auto mt-0">
 
-                        <ul class="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
-                            <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/home.png" alt="Deskripsi Gambar"
-                                        class="w-10 h-10">Semua</a></li>
-                            <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/iconapple.png" alt="Deskripsi Gambar"
-                                        class="w-10 h-10">Buah</a></li>
-                            <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/daging.jpg" alt="Deskripsi Gambar"
-                                        class="w-10 h-10">Daging</a></li>
-                            <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/grosir (2).png" alt="Deskripsi Gambar"
-                                        class="w-10 h-10">Grosir</a></li>
-                            <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/sayur.jpg" alt="Deskripsi Gambar"
-                                        class="w-10 h-10">Sayur</a></li>
-                            <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/frozen.jpg" alt="Deskripsi Gambar"
-                                        class="w-10 h-10">Frozen</a></li>
-                        </ul>
+                        <ul
+                        class="flex flex-wrap items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="/"><img src="assets/img/home.png" alt="Deskripsi Gambar"
+                                    class="w-10 h-10">Semua</a></li>
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="/buah"><img src="assets/img/iconapple.png" alt="Deskripsi Gambar"
+                                    class="w-10 h-10">Buah</a></li>
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="/daging"><img src="assets/img/daging.jpg" alt="Deskripsi Gambar"
+                                    class="w-10 h-10">Daging</a></li>
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="/grosir"><img src="assets/img/grosir (2).png" alt="Deskripsi Gambar"
+                                    class="w-10 h-10">Grosir</a></li>
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="/sayur"><img src="assets/img/sayur.jpg" alt="Deskripsi Gambar"
+                                    class="w-10 h-10">Sayur</a></li>
+                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                                href="/frozen"><img src="assets/img/frozen.jpg" alt="Deskripsi Gambar"
+                                    class="w-10 h-10">Frozen</a></li>
+                    </ul>
                     </div>
                 </nav>
 
                 <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                     <a href="#" class="w-64 h-64">
-                        <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/bihun.jpeg">
+                        <img class="w-32 h-32 mx-auto my-auto hover:grow hover:shadow-lg" src="assets/img/bihun.jpeg">
                         <div class="flex items-center justify-between pt-3">
                             <p class="">Bihun Jagung</p>
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -194,7 +195,7 @@
 
                 <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                     <a href="#" class="w-64 h-64">
-                        <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/saos.jpeg">
+                        <img class="w-32 h-32 mx-auto my-auto hover:grow hover:shadow-lg" src="assets/img/saos.jpeg">
                         <div class="flex items-center justify-between pt-3">
                             <p class="">Saos</p>
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -212,7 +213,7 @@
 
                 <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                     <a href="#" class="w-64 h-64">
-                        <img class=" mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/kecap.jpeg">
+                        <img class="w-32 h-32 mx-auto my-auto hover:grow hover:shadow-lg" src="assets/img/kecap.jpeg">
                         <div class="flex items-center justify-between pt-3">
                             <p class="">Kecap</p>
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"

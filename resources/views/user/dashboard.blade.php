@@ -5,7 +5,7 @@
     <body class="text-base leading-normal tracking-normal text-gray-600 bg-white work-sans">
 
         <!--Nav-->
-        <nav id="header" class="top-0 z-30 w-full py-1">
+        {{-- <nav id="header" class="top-0 z-30 w-full py-1">
             <div class="container flex flex-wrap items-center justify-between w-full px-6 py-3 mx-auto mt-0">
 
                 <label for="menu-toggle" class="block cursor-pointer md:hidden">
@@ -130,7 +130,7 @@
 
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
         <div class="container relative mx-auto carousel" style="max-width:1600px;">
             <div class="relative w-full overflow-hidden carousel-inner">
@@ -281,22 +281,22 @@
                         <ul
                             class="flex flex-wrap items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/home.png" alt="Deskripsi Gambar"
+                                    href="/"><img src="assets/img/home.png" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Semua</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/iconapple.png" alt="Deskripsi Gambar"
+                                    href="/buah"><img src="assets/img/iconapple.png" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Buah</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/daging.jpg" alt="Deskripsi Gambar"
+                                    href="/daging"><img src="assets/img/daging.jpg" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Daging</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/grosir (2).png" alt="Deskripsi Gambar"
+                                    href="/grosir"><img src="assets/img/grosir (2).png" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Grosir</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/sayur.jpg" alt="Deskripsi Gambar"
+                                    href="/sayur"><img src="assets/img/sayur.jpg" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Sayur</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/frozen.jpg" alt="Deskripsi Gambar"
+                                    href="/frozen"><img src="assets/img/frozen.jpg" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Frozen</a></li>
                         </ul>
                     </div>

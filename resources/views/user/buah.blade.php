@@ -1,10 +1,11 @@
 @extends('user.app')
+
 @section('content')
 
     <body class="text-base leading-normal tracking-normal text-gray-600 bg-white work-sans">
 
 
-        <div class="container relative mx-auto carousel" style="max-width:1600px;">
+        {{-- <div class="container relative mx-auto carousel" style="max-width:1600px;">
             <div class="relative w-full overflow-hidden carousel-inner">
                 <!--Slide 1-->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
@@ -92,7 +93,7 @@
                 </ol>
 
             </div>
-        </div>
+        </div> --}}
 
         <!--
 
@@ -150,24 +151,25 @@
                 <nav id="store" class="top-0 z-30 w-full px-6 py-1">
                     <div class="container flex flex-wrap items-center justify-between w-full px-2 py-3 mx-auto mt-0">
 
-                        <ul class="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
+                        <ul
+                            class="flex flex-wrap items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/home.png" alt="Deskripsi Gambar"
+                                    href="/"><img src="assets/img/home.png" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Semua</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/iconapple.png" alt="Deskripsi Gambar"
+                                    href="/buah"><img src="assets/img/iconapple.png" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Buah</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/daging.jpg" alt="Deskripsi Gambar"
+                                    href="/daging"><img src="assets/img/daging.jpg" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Daging</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/grosir (2).png" alt="Deskripsi Gambar"
+                                    href="/grosir"><img src="assets/img/grosir (2).png" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Grosir</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/sayur.jpg" alt="Deskripsi Gambar"
+                                    href="/sayur"><img src="assets/img/sayur.jpg" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Sayur</a></li>
                             <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
-                                    href="#"><img src="assets/img/frozen.jpg" alt="Deskripsi Gambar"
+                                    href="/frozen"><img src="assets/img/frozen.jpg" alt="Deskripsi Gambar"
                                         class="w-10 h-10">Frozen</a></li>
                         </ul>
                     </div>
@@ -175,7 +177,7 @@
 
                 <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                     <a href="#" class="w-64 h-64">
-                        <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/banana.png">
+                        <img class="w-32 h-32 mx-auto my-auto hover:grow hover:shadow-lg" src="assets/img/banana.png">
                         <div class="flex items-center justify-between pt-3">
                             <p class="">Pisang</p>
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -193,7 +195,7 @@
 
                 <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                     <a href="#" class="w-64 h-64">
-                        <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/apel.png">
+                        <img class="w-32 h-32 mx-auto my-auto hover:grow hover:shadow-lg" src="assets/img/apel.png">
                         <div class="flex items-center justify-between pt-3">
                             <p class="">Apel</p>
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -214,7 +216,7 @@
 
                 <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                     <a href="#" class="w-64 h-64">
-                        <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/jeruk.jpeg">
+                        <img class="w-32 h-32 mx-auto my-auto hover:grow hover:shadow-lg" src="assets/img/jeruk.jpeg">
                         <div class="flex items-center justify-between pt-3">
                             <p class="">jeruk</p>
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -232,7 +234,7 @@
 
                 <div class="flex flex-col w-full p-6 md:w-1/3 xl:w-1/4">
                     <a href="#" class="w-64 h-64">
-                        <img class="mx-auto my-auto w-32 h-32 hover:grow hover:shadow-lg" src="assets/img/pokat.jpeg">
+                        <img class="w-32 h-32 mx-auto my-auto hover:grow hover:shadow-lg" src="assets/img/pokat.jpeg">
                         <div class="flex items-center justify-between pt-3">
                             <p class="">Alpukat</p>
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"

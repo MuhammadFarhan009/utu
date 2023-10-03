@@ -18,7 +18,7 @@ class HomeController extends Controller
 
             if($usertype == 'user'){
                 $dataBarang = dataBarang::all();
-                return view('dashboard')->with('databarang', $dataBarang);
+                return view('user.dashboard')->with('databarang', $dataBarang);
             }
 
             else if($usertype == 'admin'){
