@@ -211,14 +211,12 @@
                         </h2>
 
                         <p>
-                            Donec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex
-                            non
-                            libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra
-                            lorem
-                            volutpat sodales. In ornare porttitor odio sit amet laoreet. Sed laoreet, nulla a posuere
-                            ultrices, purus nulla tristique turpis, hendrerit rutrum augue quam ut est. Fusce malesuada
-                            posuere libero, vitae dapibus eros facilisis euismod. Sed sed lobortis justo, ut tincidunt
-                            velit. Mauris in maximus eros.
+                            Green flow adalah platform belanja bahan makanan online
+                            pertama di Aceh.
+                            Diluncurkan tahun 2023, Green flow merupakan sebuah platform yang menawarkan bahan
+                            makanan ikan, sayur, dan sembako dapat dilihat langsung di website atau aplikasi dan kami
+                            mengantar pesanan ke alamat dan waktu yang dipilih konsumen.
+
                         </p>
                     </div>
                 </main>

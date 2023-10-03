@@ -30,7 +30,7 @@ Route::get('/', function () {
 });
 
 Route::get('/q', function () {
-    return view('user.welcome');
+    return view('user.aboutus');
 });
 
 

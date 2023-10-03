@@ -149,14 +149,20 @@
                         id="dropdown-menu">
                         <div class="py-1" role="none">
                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                            <form method="POST" action="#" role="none">
-                                <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm"
-                                    role="menuitem" tabindex="-1" id="menu-item-3">Login</button>
-                            </form>
-                            <form method="POST" action="#" role="none">
-                                <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm"
-                                    role="menuitem" tabindex="-1" id="menu-item-3">Register</button>
-                            </form>
+                            @if (Route::has('login'))
+                                @auth
+                                    <a href="{{ url('/home') }}"
+                                        class="block w-full px-4 py-2 text-sm text-left text-gray-700">Dashboard</a>
+                                @else
+                                    <a href="{{ route('login') }}"
+                                        class="block w-full px-4 py-2 text-sm text-left text-gray-700">Log in</a>
+
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}"
+                                            class="block w-full px-4 py-2 text-sm text-left text-gray-700">Register</a>
+                                    @endif
+                                @endauth
+                            @endif
                         </div>
                     </div>
                 </div>
