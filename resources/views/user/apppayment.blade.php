@@ -134,8 +134,24 @@
                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
                             @if (Route::has('login'))
                                 @auth
-                                    <a href="{{ url('/home') }}"
-                                        class="block w-full px-4 py-2 text-sm text-left text-gray-700">Dashboard</a>
+                                <a href="{{ url('/home') }}"
+                                class="block w-full px-4 py-2 text-sm text-left text-gray-700">Dashboard</a>
+                            <div class="mt-3 space-y-1">
+                                <x-responsive-nav-link :href="route('profile.edit')">
+                                    {{ __('Profile') }}
+                                </x-responsive-nav-link>
+
+                                <!-- Authentication -->
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+
+                                    <x-responsive-nav-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                            this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </x-responsive-nav-link>
+                                </form>
+                            </div>
                                 @else
                                     <a href="{{ route('login') }}"
                                         class="block w-full px-4 py-2 text-sm text-left text-gray-700">Log In</a>
@@ -195,8 +211,8 @@
             <div class="p-4 ">
                 <ul class="list-none">
                     <li class="font-bold">Green Flow</li>
-                    <li><a href="{{ asset('user/aboutus') }}" class=" hover:text-blue-600">About Us</a></li>
-                    <li><a href="#" class=" hover:text-blue-600">Blog</a></li>
+                    <li><a href="/aboutus" class=" hover:text-blue-600">About Us</a></li>
+                    <li><a href="#" cl  ass=" hover:text-blue-600">Blog</a></li>
                     <li><a href="#" class=" hover:text-blue-600">Careers</a></li>
                     <li><a href="#" class=" hover:text-blue-600">Suppliers</a></li>
                 </ul>
@@ -206,8 +222,8 @@
                 <ul class="list-none">
                     <li class="font-bold">Help</li>
                     <li><a href="#" class=" hover:text-blue-600">Contact Us</a></li>
-                    <li><a href="#" class=" hover:text-blue-600">Delivery Information</a></li>
-                    <li><a href="#" class=" hover:text-blue-600">FAQ</a></li>
+                    <li><a href="/delivery" class=" hover:text-blue-600">Delivery Information</a></li>
+                    <li><a href="/FAQ" class=" hover:text-blue-600">FAQ</a></li>
                 </ul>
             </div>
             <div class="p-4 ">

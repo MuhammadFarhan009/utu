@@ -1,20 +1,27 @@
-@extends('user.app')
-@section('content')
+@extends('user.apppayment')
+@section('payment')
 
     <body class="text-base leading-normal tracking-normal text-gray-600 bg-white work-sans">
 
 
-        <div id="about" class="relative bg-white overflow-hidden mt-6">
-            <div class="max-w-7xl mx-auto flex justify-center items-center min-h-screen">
-                <div class="relative z-10 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+
+
+        <a href="/">
+            <img src="assets/img/left-arrow.png" alt="" class="w-16 h-16 mt-4 ml-72" style="display: block;" >
+        </a>
+
+        <div id="about" class="relative mt-6 overflow-hidden bg-white">
+
+            <div class="flex items-center justify-center min-h-screen mx-auto max-w-7xl">
+                <div class="relative lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
 
 
                     <div class="pt-1"></div>
 
-                    <main class="w-full mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <main class="w-full px-4 mx-auto max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                         <div class="sm:text-center lg:text-left">
                             <h2
-                                class="text-center my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+                                class="my-6 text-2xl font-extrabold tracking-tight text-center text-gray-900 sm:text-3xl md:text-4xl">
                                 Green flow adalah platform belanja bahan makanan online
                                 pertama di Aceh.
 

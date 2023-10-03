@@ -1,8 +1,12 @@
 @extends('user.apppayment')
 @section('payment')
 
+
+
     <body>
+
         <div class="grid h-screen grid-cols-3">
+           
             <div class="col-span-3 px-12 space-y-8 lg:col-span-2 bg-indigo-50">
                 <div class="relative flex flex-col p-4 mt-8 bg-white rounded-md shadow sm:flex-row sm:items-center">
                     <div class="flex flex-row items-center w-full pb-4 border-b sm:border-b-0 sm:w-auto sm:pb-0">
@@ -70,6 +74,9 @@
                 </button>
             </div>
             <div class="hidden col-span-1 bg-white lg:block">
+                <a href="/">
+                    <img src="assets/img/left-arrow.png" alt="" class="w-8 h-8 mt-4 ml-8" style="" >
+                </a>
                 <h1 class="px-8 py-6 text-xl text-gray-600 border-b-2">Order Summary</h1>
                 <ul class="px-8 py-6 space-y-6 border-b">
                     <li class="grid grid-cols-6 gap-2 border-b-1">

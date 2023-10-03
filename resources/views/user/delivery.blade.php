@@ -1,16 +1,19 @@
-@extends('user.app')
-@section('content')
+@extends('user.apppayment')
+@section('payment')
 
     <body class="text-base leading-normal tracking-normal text-gray-600 bg-white work-sans">
 
 
         <section class="">
+            <a href="/">
+                <img src="assets/img/left-arrow.png" alt="" class="w-8 h-8 mt-4 ml-72" style="" >
+            </a>
             <div class="py-12 bg-white">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 
                     <div class="lg:text-center">
                         <p
-                            class="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                            class="mt-2 text-3xl font-semibold leading-8 tracking-tight text-gray-900 font-heading sm:text-4xl">
                             Delivey Information
                         </p>
                     </div>
@@ -20,7 +23,7 @@
                             <div class="relative">
                                 <dt>
                                     <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
+                                        class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-primary-500">
                                         <img src="https://www.svgrepo.com/show/503163/api-settings.svg">
                                     </div>
                                 </dt>
@@ -33,7 +36,7 @@
                             <div class="relative">
                                 <dt>
                                     <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
+                                        class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-primary-500">
                                         <img src="https://www.svgrepo.com/show/503138/webpack.svg">
                                     </div>
                                 </dt>
@@ -44,7 +47,7 @@
                             <div class="relative">
                                 <dt>
                                     <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
+                                        class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-primary-500">
                                         <img src="https://www.svgrepo.com/show/511771/dashboard-671.svg">
 
                                     </div>
@@ -56,7 +59,7 @@
                             <div class="relative">
                                 <dt>
                                     <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
+                                        class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-primary-500">
                                         <img src="https://www.svgrepo.com/show/76267/free-commercial-label.svg">
 
                                     </div>

@@ -44,6 +44,15 @@ Route::get('/sayur', function () {
 Route::get('/frozen', function () {
     return view('user.frozen');
 });
+Route::get('/aboutus', function () {
+    return view('user.aboutus');
+});
+Route::get('/FAQ', function () {
+    return view('user.faq');
+});
+Route::get('/delivery', function () {
+    return view('user.delivery');
+});
 Route::get('/p', function () {
     return view('user.gambar');
 });
