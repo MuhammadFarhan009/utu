@@ -12,7 +12,7 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
-    @vite('resources/css/app.css')
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .work-sans {
             font-family: 'Work Sans', sans-serif;
@@ -85,7 +85,7 @@
             <div class="order-3 hidden w-full md:flex md:items-center md:w-auto md:order-1" id="menu">
                 <nav>
                     <ul class="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
-                        <li><a class="inline-block px-4 py-2 no-underline hover:text-black hover:underline"
+                        <li><a class="inline-block px-8 py-2 no-underline hover:text-black hover:underline"
                                 href="#"><img src="assets/img/logo.png" alt="Deskripsi Gambar"
                                     class="w-20 h-20"></img></a></li>
                     </ul>
