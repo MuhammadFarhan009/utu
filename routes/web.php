@@ -32,6 +32,12 @@ Route::get('/', function () {
 Route::get('/buah', function () {
     return view('user.buah');
 });
+Route::get('/blog', function () {
+    return view('user.blog');
+});
+Route::get('/careers', function () {
+    return view('user.carrier');
+});
 Route::get('/daging', function () {
     return view('user.daging');
 });
@@ -60,18 +66,18 @@ Route::get('/p', function () {
 
 
 // Route::get('/dashboard', function () {
-    //     return view('dashboard');
-    // })->middleware(['auth', 'verified'])->name('dashboard');
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
-    Route::get('/home', [HomeController::class, 'index'])->middleware('auth')->name('home');
+Route::get('/home', [HomeController::class, 'index'])->middleware('auth')->name('home');
 
-    Route::middleware('auth')->group(function () {
-        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-        Route::get('/keranjang', function () {
-            return view('user.keranjang');
-        });
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/keranjang', function () {
+        return view('user.keranjang');
+    });
 });
 
 

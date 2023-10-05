@@ -208,8 +208,8 @@
                 <ul class="list-none">
                     <li class="font-bold">Green Flow</li>
                     <li><a href="/aboutus" class=" hover:text-blue-600">About Us</a></li>
-                    <li><a href="#" class=" hover:text-blue-600">Blog</a></li>
-                    <li><a href="#" class=" hover:text-blue-600">Careers</a></li>
+                    <li><a href="/blog" class=" hover:text-blue-600">Blog</a></li>
+                    <li><a href="/careers" class=" hover:text-blue-600">Careers</a></li>
                     <li><a href="https://wa.me/+6282291047754" target="_blank"
                             class=" hover:text-blue-600">Suppliers</a></li>
                 </ul>
