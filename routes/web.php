@@ -16,6 +16,7 @@ use App\Http\Controllers\UploadgambarController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/Data-gambar', [UploadgambarController::class, 'index'])->name('Data-gambar');
 Route::get('/Create-gambar', [UploadgambarController::class, 'create'])->name('Create-gambar');
 Route::post('/Simpan-gambar', [UploadgambarController::class, 'store'])->name('Simpan-gambar');
@@ -62,9 +63,6 @@ Route::get('/delivery', function () {
 Route::get('/p', function () {
     return view('user.gambar');
 });
-Route::get('/payment', function(){
-    return view('payment.index');
-});
 
 
 
@@ -80,6 +78,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/keranjang', function () {
         return view('user.keranjang');
+    });
+    Route::get('/payment', function () {
+        return view('payment.index');
     });
 });
 

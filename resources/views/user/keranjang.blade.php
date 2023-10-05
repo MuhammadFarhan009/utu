@@ -6,7 +6,7 @@
     <body>
 
         <div class="grid h-screen grid-cols-3">
-           
+
             <div class="col-span-3 px-12 space-y-8 lg:col-span-2 bg-indigo-50">
                 <div class="relative flex flex-col p-4 mt-8 bg-white rounded-md shadow sm:flex-row sm:items-center">
                     <div class="flex flex-row items-center w-full pb-4 border-b sm:border-b-0 sm:w-auto sm:pb-0">
@@ -68,10 +68,12 @@
                         </fieldset>
                     </section>
                 </div>
-                <button
-                    class="w-full px-4 py-3 text-xl font-semibold text-white transition-colors bg-pink-400 rounded-full submit-button focus:ring focus:outline-none">
-                    Pay Rp23.000
-                </button>
+                <a href="/payment">
+                    <button
+                        class="w-full px-4 py-3 text-xl font-semibold text-white transition-colors bg-pink-400 rounded-full submit-button focus:ring focus:outline-none">
+                        Pay Rp23.000
+                    </button>
+                </a>
             </div>
             <div class="hidden col-span-1 bg-white lg:block">
                 <a href="/">
