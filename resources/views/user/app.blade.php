@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tailwind Starter Template - Nordic Shop: Tailwind Toolbox</title>
-    <meta name="description" content="Free open source Tailwind CSS Store template">
+    <title>GreenFlow</title>
+    <meta name="description" content="GreenFlow">
     <meta name="keywords"
-        content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
+        content="GreenFlow">
 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
@@ -208,8 +208,8 @@
                 <ul class="list-none">
                     <li class="font-bold">Green Flow</li>
                     <li><a href="/aboutus" class=" hover:text-blue-600">About Us</a></li>
-                    <li><a href="#" class=" hover:text-blue-600">Blog</a></li>
-                    <li><a href="#" class=" hover:text-blue-600">Careers</a></li>
+                    <li><a href="/blog" class=" hover:text-blue-600">Blog</a></li>
+                    <li><a href="/careers" class=" hover:text-blue-600">Careers</a></li>
                     <li><a href="https://wa.me/+6282291047754" target="_blank"
                             class=" hover:text-blue-600">Suppliers</a></li>
                 </ul>
