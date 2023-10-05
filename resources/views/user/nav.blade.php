@@ -127,9 +127,11 @@
                 </div>
             </div>
         </nav> --}}
-    <div class="w-full h-15">
-        <img src="assets/img/fix.jpeg" alt="Deskripsi Gambar">
-    </div>
+        <div class="flex items-center justify-center h-15">
+            <div class="flex flex-wrap">
+                <img src="assets/img/fix.jpeg" alt="Deskripsi Gambar">
+            </div>
+        </div>
 
     <!--
 
