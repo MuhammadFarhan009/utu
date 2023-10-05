@@ -62,6 +62,9 @@ Route::get('/delivery', function () {
 Route::get('/p', function () {
     return view('user.gambar');
 });
+Route::get('/payment', function(){
+    return view('payment.index');
+});
 
 
 
